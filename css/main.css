@@ -1,13 +1,29 @@
 @font-face {
   font-family: "Campton Semibold";
-  src: url("../fonts/Campton-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Campton-SemiBold.eot");
+  src: url("../fonts/Campton-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Campton-SemiBold.woff") format("woff"),
+    url("../fonts/Campton-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Campton Medium";
-  src: url("../fonts/Campton-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Campton-Medium.eot");
+  src: url("../fonts/Campton-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Campton-Medium.woff") format("woff"),
+    url("../fonts/Campton-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton Bold";
+  src: url("../fonts/Campton-Bold.eot");
+  src: url("../fonts/Campton-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Campton-Bold.woff") format("woff"),
+    url("../fonts/Campton-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -137,16 +153,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: 55px 150px 55px 52px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .get-started {
   width: 420px;
+  margin-bottom: 77px;
   font-size: 34px;
   line-height: 1.24;
   letter-spacing: -0.5px;
+}
+
+.label-text {
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.206977px;
+}
+
+.label-text::after {
+  content: "*";
+  padding-left: 3px;
+  color: red;
 }
 
 .text-input {
