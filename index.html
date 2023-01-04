@@ -18,14 +18,28 @@
             </div>
             <div class="right-side">
                 <div class="wrapper">
-                    <p class="get-started">Let&#0146;s get started with a few simple steps</p>
+                    <p class="get-started">Let&#0146;s get started
+                        <br>with a few simple steps
+                    </p>
+                    <div class="input-item">
+                        <input type="text" class="text-input" name="email" placeholder="user@domain.com"
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
+                        <label for="email" class="label-text">Email</label>
+                        <p class="warning">Wrong email</p>
+                    </div>
+                    <div class="input-item">
+                        <input type="text" class="text-input" name="fullname" placeholder="John Smith"
+                            pattern="([A-Z][a-z]{1,} )([A-Z][a-z]{1,} )?([A-Z][a-z]{1,})">
+                        <label for="fullname" class="label-text">Full name</label>
+                        <p class="warning">Wrong full name</p>
+                    </div>
+                    <div class="input-item">
+                        <input type="password" class="text-input" name="password" placeholder="SuperPassword"
+                            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$">
+                        <label for="password" class="label-text">Password</label>
+                        <p class="warning">Wrong password</p>
+                    </div>
 
-                    <label for="email" class="label-text">Email</label>
-                    <input type="text" class="text-input" name="email">
-                    <label for="fullname" class="label-text">Full name</label>
-                    <input type="text" class="text-input" name="fullname">
-                    <label for="password" class="label-text">Password</label>
-                    <input type="password" class="text-input" name="password">
                     <button type="submit" class="signup-button">Sign up</button>
                 </div>
 
